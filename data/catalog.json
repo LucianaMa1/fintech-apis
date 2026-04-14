@@ -1,15 +1,302 @@
 [
-  {"id": "stripe", "name": "Stripe", "website": "https://stripe.com", "docs": "https://docs.stripe.com/api", "category": "payments"},
-  {"id": "plaid", "name": "Plaid", "website": "https://plaid.com", "docs": "https://plaid.com/docs/api/", "category": "open_banking"},
-  {"id": "adyen", "name": "Adyen", "website": "https://www.adyen.com", "docs": "https://docs.adyen.com", "category": "payments"},
-  {"id": "alpaca", "name": "Alpaca", "website": "https://alpaca.markets", "docs": "https://alpaca.markets/docs", "category": "brokerage"},
-  {"id": "alpha-vantage", "name": "Alpha Vantage", "website": "https://www.alphavantage.co", "docs": "https://www.alphavantage.co/documentation", "category": "market_data"},
-  {"id": "checkout-com", "name": "Checkout.com", "website": "https://www.checkout.com", "docs": "https://www.checkout.com/docs", "category": "payments"},
-  {"id": "finicity", "name": "Finicity", "website": "https://www.finicity.com", "docs": "https://developer.finicity.com", "category": "open_banking"},
-  {"id": "marqeta", "name": "Marqeta", "website": "https://www.marqeta.com", "docs": "https://www.marqeta.com/docs", "category": "card_issuing"},
-  {"id": "marketstack", "name": "Marketstack", "website": "https://marketstack.com", "docs": "https://marketstack.com/documentation", "category": "market_data"},
-  {"id": "sardine", "name": "Sardine", "website": "https://www.sardine.ai", "docs": "https://docs.sardine.ai", "category": "fraud_risk"},
-  {"id": "treasury-prime", "name": "Treasury Prime", "website": "https://www.treasuryprime.com", "docs": "https://docs.treasuryprime.com", "category": "bank_accounts"},
-  {"id": "truelayer", "name": "TrueLayer", "website": "https://truelayer.com", "docs": "https://docs.truelayer.com/reference/welcome-api-reference", "category": "open_banking"},
-  {"id": "unit", "name": "Unit", "website": "https://www.unit.co", "docs": "https://www.unit.co/docs/api/", "category": "bank_accounts"}
+  {
+    "id": "stripe",
+    "name": "Stripe",
+    "website": "https://stripe.com",
+    "docs": "https://docs.stripe.com/api",
+    "category": "payments",
+    "_meta": {
+      "last_verified": "2026-04-14",
+      "verification_method": "crawl+llm",
+      "pages_crawled": 11,
+      "confidence": {},
+      "sources": {},
+      "content_hashes": {
+        "https://stripe.com": "f3f589bf7e542759bd545d1b1cb57d14",
+        "https://docs.stripe.com/api": "5e4a024b3d7627bea653a397c1f5abce",
+        "https://stripe.com/pricing": "f84181fd20e42a21d42b61d8374ec236",
+        "https://stripe.com/docs": "6561cff8663ac00ca9f925a28d776756",
+        "https://stripe.com/api": "5e4a024b3d7627bea653a397c1f5abce",
+        "https://stripe.com/docs/sdks": "20e2d18028d83457da5738cc795d04ab",
+        "https://stripe.com/docs/libraries": "20e2d18028d83457da5738cc795d04ab",
+        "https://stripe.com/docs/quickstart": "e2089219d655dd469456d73abd4f4cab",
+        "https://stripe.com/features": "28c953e66db26ceb15d358f04570c84a",
+        "https://stripe.com/security": "4f988274ea0bcce6b5d568284b406aaa",
+        "https://docs.stripe.com/api/plans": "ca1ab4daa5079e6fe6860fdd57df8df7"
+      }
+    }
+  },
+  {
+    "id": "plaid",
+    "name": "Plaid",
+    "website": "https://plaid.com",
+    "docs": "https://plaid.com/docs/api/",
+    "category": "open_banking",
+    "_meta": {
+      "last_verified": "2026-04-14",
+      "verification_method": "crawl+llm",
+      "pages_crawled": 9,
+      "confidence": {},
+      "sources": {},
+      "content_hashes": {
+        "https://plaid.com": "a39124a83dbf915b981c91d78b27d28c",
+        "https://plaid.com/docs/api": "9a9e51fbcf15910e1f7a566458f70436",
+        "https://plaid.com/pricing": "e9d722764710ee31bf8324777da8d43f",
+        "https://plaid.com/docs": "0b91bbb07162332e082a0aa9414212d5",
+        "https://plaid.com/docs/libraries": "af1b52a23b05d0b5a90547ede0d9f34a",
+        "https://plaid.com/docs/quickstart": "2948e0bcb3be8c5f80f5ae001697efdd",
+        "https://plaid.com/products": "125079e4296b22ce6579f9f2850d3bef",
+        "https://plaid.com/security": "06caf144ff3744dad7582a08746bfe8d",
+        "https://plaid.com/compliance": "6049e1608ac853ff770d4f534c6832ce"
+      }
+    }
+  },
+  {
+    "id": "adyen",
+    "name": "Adyen",
+    "website": "https://www.adyen.com",
+    "docs": "https://docs.adyen.com",
+    "category": "payments",
+    "_meta": {
+      "last_verified": "2026-04-14",
+      "verification_method": "crawl+llm",
+      "pages_crawled": 3,
+      "confidence": {},
+      "sources": {},
+      "content_hashes": {
+        "https://www.adyen.com": "bdce62431a174171a5b17433d3c166a8",
+        "https://docs.adyen.com": "c7aca730a822317814796789f5d96b1b",
+        "https://www.adyen.com/pricing": "96663774925f99e2b2340450c1a77329"
+      }
+    }
+  },
+  {
+    "id": "alpaca",
+    "name": "Alpaca",
+    "website": "https://alpaca.markets",
+    "docs": "https://alpaca.markets/docs",
+    "category": "brokerage",
+    "_meta": {
+      "last_verified": "2026-04-14",
+      "verification_method": "crawl+llm",
+      "pages_crawled": 19,
+      "openapi_spec_url": "https://alpaca.markets/openapi.json",
+      "confidence": {},
+      "sources": {},
+      "content_hashes": {
+        "https://alpaca.markets": "73dc24f8678180c8f47000c66737fe09",
+        "https://alpaca.markets/docs": "cfe025ac67fc2fe1da26e33ae96acf5f",
+        "https://alpaca.markets/pricing": "cfe025ac67fc2fe1da26e33ae96acf5f",
+        "https://alpaca.markets/plans": "cfe025ac67fc2fe1da26e33ae96acf5f",
+        "https://alpaca.markets/documentation": "cfe025ac67fc2fe1da26e33ae96acf5f",
+        "https://alpaca.markets/reference": "cfe025ac67fc2fe1da26e33ae96acf5f",
+        "https://alpaca.markets/api": "cfe025ac67fc2fe1da26e33ae96acf5f",
+        "https://alpaca.markets/sdks": "cfe025ac67fc2fe1da26e33ae96acf5f",
+        "https://alpaca.markets/features": "cfe025ac67fc2fe1da26e33ae96acf5f",
+        "https://alpaca.markets/products": "cfe025ac67fc2fe1da26e33ae96acf5f",
+        "https://alpaca.markets/capabilities": "cfe025ac67fc2fe1da26e33ae96acf5f",
+        "https://alpaca.markets/security": "1df691e6260fc445a9891228e2a6dff9",
+        "https://alpaca.markets/compliance": "cfe025ac67fc2fe1da26e33ae96acf5f",
+        "https://alpaca.markets/trust": "cfe025ac67fc2fe1da26e33ae96acf5f",
+        "https://alpaca.markets/openapi.json": "53b31e52abf9b776c7576d34f02379d8",
+        "https://alpaca.markets/openapi.yaml": "53b31e52abf9b776c7576d34f02379d8",
+        "https://alpaca.markets/swagger.json": "53b31e52abf9b776c7576d34f02379d8",
+        "https://alpaca.markets/api/openapi.json": "53b31e52abf9b776c7576d34f02379d8",
+        "https://alpaca.markets/api/v1/openapi.json": "53b31e52abf9b776c7576d34f02379d8"
+      }
+    }
+  },
+  {
+    "id": "alpha-vantage",
+    "name": "Alpha Vantage",
+    "website": "https://www.alphavantage.co",
+    "docs": "https://www.alphavantage.co/documentation",
+    "category": "market_data",
+    "_meta": {
+      "last_verified": "2026-04-14",
+      "verification_method": "crawl+llm",
+      "pages_crawled": 2,
+      "confidence": {},
+      "sources": {},
+      "content_hashes": {
+        "https://www.alphavantage.co": "af921be9e21ea96ecabe4748520b5fd9",
+        "https://www.alphavantage.co/documentation": "4a6403714c7e912d416c0931d5eda33c"
+      }
+    }
+  },
+  {
+    "id": "checkout-com",
+    "name": "Checkout.com",
+    "website": "https://www.checkout.com",
+    "docs": "https://www.checkout.com/docs",
+    "category": "payments",
+    "_meta": {
+      "last_verified": "2026-04-14",
+      "verification_method": "crawl+llm",
+      "pages_crawled": 4,
+      "confidence": {},
+      "sources": {},
+      "content_hashes": {
+        "https://www.checkout.com": "5a57df2723dd01af85945219232668ad",
+        "https://www.checkout.com/docs": "fd1d7a1a6e7bffe9d512e32a18113d93",
+        "https://www.checkout.com/pricing": "369ac274c0535812d23e311bda09d05a",
+        "https://www.checkout.com/docs/docs": "fd1d7a1a6e7bffe9d512e32a18113d93"
+      }
+    }
+  },
+  {
+    "id": "finicity",
+    "name": "Finicity",
+    "website": "https://www.finicity.com",
+    "docs": "https://developer.finicity.com",
+    "category": "open_banking",
+    "_meta": {
+      "last_verified": "2026-04-14",
+      "verification_method": "crawl+llm",
+      "pages_crawled": 22,
+      "openapi_spec_url": "https://www.finicity.com/openapi.json",
+      "confidence": {},
+      "sources": {},
+      "content_hashes": {
+        "https://www.finicity.com": "4389e46cd340043069f703d6d8ded28e",
+        "https://www.finicity.com/pricing": "4389e46cd340043069f703d6d8ded28e",
+        "https://www.finicity.com/plans": "4389e46cd340043069f703d6d8ded28e",
+        "https://www.finicity.com/docs": "4389e46cd340043069f703d6d8ded28e",
+        "https://www.finicity.com/documentation": "4389e46cd340043069f703d6d8ded28e",
+        "https://www.finicity.com/reference": "4389e46cd340043069f703d6d8ded28e",
+        "https://www.finicity.com/api": "4389e46cd340043069f703d6d8ded28e",
+        "https://www.finicity.com/docs/sdks": "4389e46cd340043069f703d6d8ded28e",
+        "https://www.finicity.com/docs/libraries": "4389e46cd340043069f703d6d8ded28e",
+        "https://www.finicity.com/docs/quickstart": "4389e46cd340043069f703d6d8ded28e",
+        "https://www.finicity.com/sdks": "4389e46cd340043069f703d6d8ded28e",
+        "https://www.finicity.com/features": "4389e46cd340043069f703d6d8ded28e",
+        "https://www.finicity.com/products": "4389e46cd340043069f703d6d8ded28e",
+        "https://www.finicity.com/capabilities": "4389e46cd340043069f703d6d8ded28e",
+        "https://www.finicity.com/security": "4389e46cd340043069f703d6d8ded28e",
+        "https://www.finicity.com/compliance": "4389e46cd340043069f703d6d8ded28e",
+        "https://www.finicity.com/trust": "4389e46cd340043069f703d6d8ded28e",
+        "https://www.finicity.com/openapi.json": "1ccab8304e194bb0d69dbf239b8116b8",
+        "https://www.finicity.com/openapi.yaml": "1ccab8304e194bb0d69dbf239b8116b8",
+        "https://www.finicity.com/swagger.json": "1ccab8304e194bb0d69dbf239b8116b8",
+        "https://www.finicity.com/api/openapi.json": "1ccab8304e194bb0d69dbf239b8116b8",
+        "https://www.finicity.com/api/v1/openapi.json": "1ccab8304e194bb0d69dbf239b8116b8"
+      }
+    }
+  },
+  {
+    "id": "marqeta",
+    "name": "Marqeta",
+    "website": "https://www.marqeta.com",
+    "docs": "https://www.marqeta.com/docs",
+    "category": "card_issuing",
+    "_meta": {
+      "last_verified": "2026-04-14",
+      "verification_method": "crawl+llm",
+      "pages_crawled": 2,
+      "confidence": {},
+      "sources": {},
+      "content_hashes": {
+        "https://www.marqeta.com": "a4476c73381c328009a8a0f4b5e91196",
+        "https://www.marqeta.com/api": "3c6bcb9010310af751f86ce449f52c79"
+      }
+    }
+  },
+  {
+    "id": "marketstack",
+    "name": "Marketstack",
+    "website": "https://marketstack.com",
+    "docs": "https://marketstack.com/documentation",
+    "category": "market_data",
+    "_meta": {
+      "last_verified": "2026-04-14",
+      "verification_method": "crawl+llm",
+      "pages_crawled": 3,
+      "confidence": {},
+      "sources": {},
+      "content_hashes": {
+        "https://marketstack.com": "0a436d8c352818980f4a391f2b37dc3e",
+        "https://marketstack.com/documentation": "1821cd05663582a37cec35dac2e39bda",
+        "https://marketstack.com/pricing": "449f31acaebb949d3d8239d0ef88b93f"
+      }
+    }
+  },
+  {
+    "id": "sardine",
+    "name": "Sardine",
+    "website": "https://www.sardine.ai",
+    "docs": "https://docs.sardine.ai",
+    "category": "fraud_risk",
+    "_meta": {
+      "last_verified": "2026-04-14",
+      "verification_method": "crawl+llm",
+      "pages_crawled": 3,
+      "confidence": {},
+      "sources": {},
+      "content_hashes": {
+        "https://www.sardine.ai": "748225b7c71a174bfa8824fc341ec48f",
+        "https://docs.sardine.ai": "ad839664a2bd7422e5a3b09f0a140134",
+        "https://www.sardine.ai/security": "f2f44ed50476475064bdf4b7250ece20"
+      }
+    }
+  },
+  {
+    "id": "treasury-prime",
+    "name": "Treasury Prime",
+    "website": "https://www.treasuryprime.com",
+    "docs": "https://docs.treasuryprime.com",
+    "category": "bank_accounts",
+    "_meta": {
+      "last_verified": "2026-04-14",
+      "verification_method": "crawl+llm",
+      "pages_crawled": 3,
+      "confidence": {},
+      "sources": {},
+      "content_hashes": {
+        "https://www.treasuryprime.com": "f45f9b4591f818ea50bfd5190fdd6772",
+        "https://docs.treasuryprime.com": "5fe7791ef4c5bdb2b2c35ae7c59b4222",
+        "https://www.treasuryprime.com/products": "f83473e8627ece1fbfc04b82987060c6"
+      }
+    }
+  },
+  {
+    "id": "truelayer",
+    "name": "TrueLayer",
+    "website": "https://truelayer.com",
+    "docs": "https://docs.truelayer.com/reference/welcome-api-reference",
+    "category": "open_banking",
+    "_meta": {
+      "last_verified": "2026-04-14",
+      "verification_method": "crawl+llm",
+      "pages_crawled": 2,
+      "confidence": {},
+      "sources": {},
+      "content_hashes": {
+        "https://truelayer.com": "bf881fb03bf3dab1991fa5e1de261b43",
+        "https://truelayer.com/security": "618c9e1e48b5c25ba600b7af47b7ef7f"
+      }
+    }
+  },
+  {
+    "id": "unit",
+    "name": "Unit",
+    "website": "https://www.unit.co",
+    "docs": "https://www.unit.co/docs/api/",
+    "category": "bank_accounts",
+    "_meta": {
+      "last_verified": "2026-04-14",
+      "verification_method": "crawl+llm",
+      "pages_crawled": 7,
+      "confidence": {},
+      "sources": {},
+      "content_hashes": {
+        "https://www.unit.co": "d8a455e99b451ae2bf6999bdcd3c6a9e",
+        "https://www.unit.co/docs/api": "d6d2da37198d2bbc3bb5feab96670f6a",
+        "https://www.unit.co/docs": "9a2993baf4b49198e5d94fbd703d281e",
+        "https://www.unit.co/docs/quickstart": "238a0f92e7443e203f177edc44d7aa23",
+        "https://www.unit.co/features": "a5b0b8134c0fa298020056861a385241",
+        "https://www.unit.co/security": "fd9ffb8ec826264b94d9a9cdd26fa141",
+        "https://www.unit.co/compliance": "fd9ffb8ec826264b94d9a9cdd26fa141"
+      }
+    }
+  }
 ]
