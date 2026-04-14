@@ -51,7 +51,7 @@ code {
 }
 
 .page-shell {
-  max-width: 1200px;
+  max-width: 1380px;
   margin: 0 auto;
   padding: 28px 20px 64px;
 }
@@ -112,19 +112,21 @@ code {
 }
 
 .hero h1 {
-  max-width: 780px;
+  max-width: 1120px;
   margin: 0;
-  font-size: clamp(34px, 5vw, 58px);
-  line-height: 1.02;
+  font-size: clamp(34px, 5.6vw, 72px);
+  line-height: 0.98;
   letter-spacing: -0.04em;
+  text-wrap: pretty;
 }
 
 .hero-copy {
-  max-width: 760px;
+  max-width: 980px;
   margin: 16px 0 0;
   color: var(--text-soft);
   font-size: 16px;
   line-height: 1.7;
+  text-wrap: pretty;
 }
 
 .search-wrap {
@@ -632,7 +634,9 @@ code {
   }
 
   .hero h1 {
+    max-width: none;
     font-size: 34px;
+    line-height: 1.02;
   }
 
   .card-badges {

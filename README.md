@@ -161,9 +161,10 @@ Unlike the original `public-apis` list, this repo uses fintech-specific facets.
 ├── data
 │   ├── apis.seed.json
 │   └── taxonomy.json
-└── mockups
-    ├── api_catalogue_taxonomy.html
-    └── fintech_catalogue_search_page.html
+├── favicon.svg
+├── index.html
+├── styles.css
+└── app.js
 ```
 
 ## Record Format
@@ -210,8 +211,6 @@ If we keep following the `public-apis` spirit but make it useful for fintech buy
 3. a stable taxonomy
 4. a machine-readable JSON dataset
 5. a lightweight browse/search UI
-
-The two local mockups in `mockups/` already point in a strong direction for the browse and taxonomy experience.
 
 ## Local preview
 
