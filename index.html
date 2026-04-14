@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fintech APIs</title>
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="nav">
+        <div class="nav-logo">
+          <span class="logo-dot"></span>
+          <span>Fintech APIs</span>
+        </div>
+        <nav class="nav-links">
+          <a href="#results">Browse</a>
+          <a href="./README.md">Scope</a>
+          <a href="./CONTRIBUTING.md">Contribute</a>
+          <a href="./mockups/fintech_catalogue_search_page.html">Mockup</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero">
+          <p class="eyebrow">Fintech API catalogue</p>
+          <h1>Find the right fintech API for products, workflows, and infra</h1>
+          <p class="hero-copy">
+            Inspired by <code>public-apis</code>, rebuilt for fintech with
+            filters for regulation, jurisdiction, data sensitivity, and pricing.
+          </p>
+
+          <div class="search-wrap">
+            <input
+              id="searchInput"
+              class="search-input"
+              type="search"
+              placeholder="Search payments, open banking, KYC, cards, treasury..."
+            />
+            <button id="clearSearchBtn" class="search-btn search-btn-secondary" type="button">
+              Clear
+            </button>
+          </div>
+
+          <div class="hero-stats" id="heroStats"></div>
+        </section>
+
+        <section class="summary-grid">
+          <article class="summary-card">
+            <div class="summary-label">Why this exists</div>
+            <p>
+              General API lists flatten fintech into one category. This catalogue keeps the
+              browseability of <code>public-apis</code> but adds the metadata fintech teams
+              actually need to compare providers.
+            </p>
+          </article>
+          <article class="summary-card">
+            <div class="summary-label">MVP scope</div>
+            <p>
+              Searchable directory, fintech-specific filters, seed dataset, and a repository
+              structure that can grow into a richer machine-readable catalogue.
+            </p>
+          </article>
+          <article class="summary-card">
+            <div class="summary-label">Data model</div>
+            <p>
+              Every record carries function, regulatory model, regions, sensitivity, pricing,
+              integration mode, and basic access metadata like auth, HTTPS, and sandbox.
+            </p>
+          </article>
+        </section>
+
+        <section class="layout" id="results">
+          <aside class="sidebar">
+            <div class="sidebar-top">
+              <div>
+                <p class="sidebar-label">Active filters</p>
+                <div id="activeFilters" class="active-filters"></div>
+              </div>
+              <button id="resetFiltersBtn" class="reset-btn" type="button">Reset all</button>
+            </div>
+
+            <div id="filterSections"></div>
+          </aside>
+
+          <section class="results">
+            <div class="results-meta">
+              <div>
+                <div id="resultsCount" class="results-count"></div>
+                <div id="resultsSubtitle" class="results-subtitle"></div>
+              </div>
+              <label class="sort-wrap">
+                <span>Sort</span>
+                <select id="sortSelect" class="sort-select">
+                  <option value="name">Name</option>
+                  <option value="category">Category</option>
+                  <option value="regionCount">Region coverage</option>
+                  <option value="sandbox">Sandbox first</option>
+                </select>
+              </label>
+            </div>
+
+            <div id="statusMessage" class="status-message" hidden></div>
+            <div id="resultsList" class="results-list"></div>
+            <div id="emptyState" class="empty-state" hidden>
+              <h2>No APIs match this filter set.</h2>
+              <p>Try clearing a few facets or broadening the search query.</p>
+            </div>
+          </section>
+        </section>
+      </main>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+{
+  "facets": {
+    "function": [
+      "payments",
+      "payouts",
+      "card_issuing",
+      "card_processing",
+      "open_banking",
+      "bank_accounts",
+      "identity_kyc",
+      "kyb",
+      "aml_screening",
+      "fraud_risk",
+      "lending",
+      "underwriting",
+      "insurance",
+      "tax",
+      "invoicing",
+      "accounting",
+      "treasury",
+      "market_data",
+      "brokerage",
+      "crypto_on_off_ramp",
+      "wallet_infrastructure"
+    ],
+    "regulatory_model": [
+      "vendor_licensed",
+      "no_license_needed",
+      "needs_customer_license",
+      "partner_bank_model"
+    ],
+    "jurisdiction": [
+      "global",
+      "US",
+      "UK",
+      "EU",
+      "APAC",
+      "LATAM",
+      "MEA"
+    ],
+    "data_sensitivity": [
+      "l0_public",
+      "l1_business",
+      "l2_identity",
+      "l3_financial_account",
+      "l4_transactional"
+    ],
+    "integration_mode": [
+      "rest",
+      "graphql",
+      "webhooks",
+      "file_transfer",
+      "sdk_only",
+      "embedded_ui"
+    ],
+    "buyer_type": [
+      "startup",
+      "smb",
+      "enterprise",
+      "fintech_platform",
+      "bank"
+    ],
+    "pricing_model": [
+      "free",
+      "freemium",
+      "pay_per_call",
+      "pay_per_verification",
+      "saas_subscription",
+      "custom_enterprise",
+      "revenue_share"
+    ]
+  }
+}
