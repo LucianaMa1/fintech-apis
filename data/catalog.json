@@ -1,0 +1,15 @@
+[
+  {"id": "stripe", "name": "Stripe", "website": "https://stripe.com", "docs": "https://docs.stripe.com/api", "category": "payments"},
+  {"id": "plaid", "name": "Plaid", "website": "https://plaid.com", "docs": "https://plaid.com/docs/api/", "category": "open_banking"},
+  {"id": "adyen", "name": "Adyen", "website": "https://www.adyen.com", "docs": "https://docs.adyen.com", "category": "payments"},
+  {"id": "alpaca", "name": "Alpaca", "website": "https://alpaca.markets", "docs": "https://alpaca.markets/docs", "category": "brokerage"},
+  {"id": "alpha-vantage", "name": "Alpha Vantage", "website": "https://www.alphavantage.co", "docs": "https://www.alphavantage.co/documentation", "category": "market_data"},
+  {"id": "checkout-com", "name": "Checkout.com", "website": "https://www.checkout.com", "docs": "https://www.checkout.com/docs", "category": "payments"},
+  {"id": "finicity", "name": "Finicity", "website": "https://www.finicity.com", "docs": "https://developer.finicity.com", "category": "open_banking"},
+  {"id": "marqeta", "name": "Marqeta", "website": "https://www.marqeta.com", "docs": "https://www.marqeta.com/docs", "category": "card_issuing"},
+  {"id": "marketstack", "name": "Marketstack", "website": "https://marketstack.com", "docs": "https://marketstack.com/documentation", "category": "market_data"},
+  {"id": "sardine", "name": "Sardine", "website": "https://www.sardine.ai", "docs": "https://docs.sardine.ai", "category": "fraud_risk"},
+  {"id": "treasury-prime", "name": "Treasury Prime", "website": "https://www.treasuryprime.com", "docs": "https://docs.treasuryprime.com", "category": "bank_accounts"},
+  {"id": "truelayer", "name": "TrueLayer", "website": "https://truelayer.com", "docs": "https://docs.truelayer.com/reference/welcome-api-reference", "category": "open_banking"},
+  {"id": "unit", "name": "Unit", "website": "https://www.unit.co", "docs": "https://www.unit.co/docs/api/", "category": "bank_accounts"}
+]

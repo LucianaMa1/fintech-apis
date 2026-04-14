@@ -1,0 +1,74 @@
+name: API Intelligence Agent
+
+on:
+  # Run every 6 hours (4 runs/day × 20 min ≈ 80 min/day, well within free tier)
+  schedule:
+    - cron: '0 */6 * * *'
+
+  # Manual trigger with optional parameters
+  workflow_dispatch:
+    inputs:
+      provider:
+        description: 'Process a specific provider (leave empty for auto-planning)'
+        required: false
+        type: string
+      force_refresh:
+        description: 'Force refresh all providers regardless of staleness'
+        required: false
+        type: boolean
+        default: false
+
+  # Also run when new providers are added to the seed
+  push:
+    paths:
+      - 'data/catalog.json'
+
+# Prevent concurrent runs (agent manages its own state)
+concurrency:
+  group: api-intel-agent
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  agent-run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run agent
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-4.1-mini' }}
+          GITHUB_ACTIONS: 'true'
+          AGENT_PROVIDER: ${{ github.event.inputs.provider || '' }}
+          AGENT_FORCE_REFRESH: ${{ github.event.inputs.force_refresh || 'false' }}
+        run: python -m agent.core
+
+      - name: Commit updated catalog
+        run: |
+          git config user.name "API Intel Agent"
+          git config user.email "agent@api-intel.bot"
+          git add data/ memory/
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            CHANGES=$(git diff --staged --stat | tail -1)
+            git commit -m "agent: update catalog — $CHANGES"
+            git push
+          fi
