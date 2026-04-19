@@ -1,0 +1,8 @@
+{
+  "name": "fintech-apis",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/generate-sitemap.mjs",
+    "generate:sitemap": "node scripts/generate-sitemap.mjs"
+  }
+}

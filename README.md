@@ -218,6 +218,7 @@ The repository now includes a first usable static catalogue UI:
 
 - `index.html`
 - `styles.css`
+- `npm run build` regenerates `sitemap.xml` and `robots.txt` before deployment
 - `app.js`
 - `data/apis.seed.json`
 
